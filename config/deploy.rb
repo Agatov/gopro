@@ -1,8 +1,8 @@
 # Bundler tasks
 require 'bundler/capistrano'
 
-set :application, "mimicase"
-set :repository,  "git@github.com:Agatov/mimicase"
+set :application, "gopro"
+set :repository,  "git@github.com:Agatov/gopro"
 
 set :scm, :git
 
