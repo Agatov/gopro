@@ -1,0 +1,240 @@
+= haml :intro
+.wrapper
+  .form-header
+    .offer
+      Предложение недели
+.wrapper
+  .main-block
+    .hero-3-plus
+      %img{src: '/images/hero_3_plus.jpg'}
+      .about
+        .title
+          GoPro Hero 3+ Black Edition
+
+        .hero-triggers
+          .hero-trigger
+            .hero-trigger-icon
+              .large 9
+              аксессуаров
+
+            .desc
+              Оригинальные аксессуары на все случаи жизни
+
+          .hero-trigger
+            .hero-trigger-icon
+              .large 1350
+              mp /H
+
+            .desc
+              Дополнительный час работы при съемке видео в формате Full HD
+
+          .hero-trigger
+            .hero-trigger-icon
+              .large 64
+              GB памяти
+
+            .desc
+              Флеш карта, на которой уместится 8 часов Full HD видео
+
+
+        -#Самая крутая экшн камера в мире + 18 самых необходимых аксессуаров по специальной цене.
+
+    .main-block-footer
+      .timer
+        .timer-title
+          До конца акции осталось:
+
+        .timer-timer
+          .num
+            2
+            .sign
+              дня
+          .colon :
+          .num
+            %span#hours
+            .sign
+              часа
+          .colon :
+          .num
+            %span#minutes
+            .sign
+              мин
+          .colon :
+          .num
+            %span#seconds
+            .sign
+              сек
+      .buy.order-call Купить
+      .prices
+        .old-price
+          48 800 рублей
+        .price
+          32 000 рублей
+
+
+.wrapper
+  .form
+    .form-header
+      .offer
+        Стоит ли переплачивать за GoPro Hero 3+ Black Edition?
+        .small
+          Оставьте заявку и наш менеджер проконсультирует вас по всем тонкостям подбора камеры GoPro
+  .form-body
+    %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+    %input{type: :text, name: :phone, placeholder: 'Введите ваш номер телефона'}
+    %button.send-order.inline-form{goal: 'order1'}
+      Отправить заявку
+
+
+
+.wrapper
+  .section-header
+    Камеры GoPro
+  .catalog
+    .catalog-item
+      %img{src: '/images/white.png'}
+      .name GoPro Hero 3
+      .blue White Edition
+      .old-price -
+      .price 10 300Р
+      .hr
+      .param
+        %img{src: '/images/icon-photo-camera.png'}
+        5 MP / 3 fps
+
+      .param.video
+        %img{src: '/images/icon-video-camera.png'}
+        1080p30 / 960p30 / 720p60fps
+        %br
+        %br
+
+      .param Встроенный Wi-Fi
+      .param Совместим с GoPro App
+      .param Совместим с Wi-Fi пультом управления
+      .param
+        %br
+        %br
+      .param
+        %br
+      .param.last
+        %br
+      .buy.order-call Купить
+
+    .catalog-item
+      %img{src: '/images/silver.png'}
+      .name GoPro Hero 3
+      .blue SILVER Edition
+      .old-price 14 800Р
+      .price 12 990Р
+      .hr
+      .param
+        %img{src: '/images/icon-photo-camera.png'}
+        11 MP / 10 fps
+      .param.video
+        %img{src: '/images/icon-video-camera.png'}
+        1080p60 / 720p120 / 1440p48 / 4kp15 / 2.7kp30 / WVGA-240fps
+
+      .param Встроенный Wi-Fi
+      .param Совместим с GoPro App
+      .param Совместим с Wi-Fi пультом управления
+      .param
+        %br
+        %br
+      .param
+        %br
+      .param.last
+        %br
+      .buy.order-call Купить
+
+    .catalog-item
+      %img{src: '/images/black.png'}
+      .name GoPro Hero 3
+      .blue Black Edition
+      .old-price 20 500Р
+      .price 16 870Р
+      .hr
+      .param
+        %img{src: '/images/icon-photo-camera.png'}
+        12 MP / 30 FPS
+      .param.video
+        %img{src: '/images/icon-video-camera.png'}
+        1080p60 / 720p120 / 1440p48 / 4kp15 / 2.7kp30 / WVGA-240fps
+
+      .param Встроенный Wi-Fi
+      .param Совместим с GoPro App
+      .param Wi-Fi пульт дистанционного управления в комплекте
+      .param Улучшенное изображение при плохом освещении
+      .param
+        %br
+      .param.last выгода 3 630Р
+      .buy.order-call Купить
+
+    .catalog-item
+      %img{src: '/images/black.png'}
+      .name GoPro Hero 3
+      .blue Black Edition Megapack
+      .old-price 36 700Р
+      .price 29 900Р
+      .hr
+      .param
+        %img{src: '/images/icon-photo-camera.png'}
+        12 MP / 30 FPS
+      .param.video
+        %img{src: '/images/icon-video-camera.png'}
+        1080p60 / 720p120 / 1440p48 / 4kp15 / 2.7kp30 / WVGA-240fps
+
+      .param Встроенный Wi-Fi
+      .param Совместим с GoPro App
+      .param Wi-Fi пульт дистанционного управления в комплекте
+      .param Улучшенное изображение при плохом освещении
+      .param +11 дополнительных аксессуаров
+      .param.last выгода 6 710Р
+      .buy.order-call Купить
+
+
+.wrapper
+  .form
+    .form-header
+      .offer
+        Мы продаем более 30 оригинальных аксессуаров для GoPro Hero 3
+        .small
+          Оставьте ваши контакты и мы вышлем вам каталог с полным перечнем акссесуаров
+  .form-body
+    %input.short{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+    %input.short{type: :text, name: :email, placeholder: 'Введите ваш email'}
+    %input.short{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+    %button.send-order.inline-form.short{goal: 'order1'}
+      Отправить заявку
+
+.wrapper
+  .section-header
+    Узнайте, как выжать из вашей GoPro 100%,
+    .small
+      если вы
+
+
+  .wall
+    .el
+      %img{src: '/images/diving.png'}
+      .like Обожаете дайвинг
+    .el
+      %img{src: '/images/snowboard.png'}
+      .like Живете сноубордом
+    .el
+      %img{src: '/images/surfing.png'}
+      .like Спите на доске
+    .el
+      %img{src: '/images/traveling.png'}
+      .like Колесите по миру
+    .el
+      %img{src: '/images/alpinism.png'}
+      .like Покоряете вершины
+    .el
+      %img{src: '/images/bicycle.png'}
+      .like Зажигаете на байке
+    .el
+      %img{src: '/images/parachute.png'}
+      .like Рождены в небе
+    .el
+      %img{src: '/images/activities.png'}
+      .like Активны по жизни
