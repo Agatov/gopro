@@ -117,20 +117,20 @@ window.hide_thank_you = ->
 
 
 window.show_subscribe_form = ->
-  $('.modal-overlay').show()
-  $('.modal-overlay').animate({'opacity': '0.8'}, 300, ->
+  $('.modal-overlay').show(
+  $('.modal-overlay').animate({'opacity': '0.8'}, 100, ->
 
     $('.modal-subscribe').css('right', '-500px')
     $('.modal-subscribe').css('top', '50%')
     $('.modal-subscribe').show()
-    $('.modal-subscribe').animate {'right': '50%'}, 500
+    $('.modal-subscribe').animate {'right': '50%'}, 300
   )
 
 window.hide_subscribe_form = ->
 
-  $('.modal-subscribe').animate {'top': '-2000px'}, 500, ->
+  $('.modal-subscribe').animate {'top': '-2000px'}, 200, ->
     $('.modal-subscribe').hide()
-    $('.modal-overlay').animate {'opacity': '0'}, 300, ->
+    $('.modal-overlay').animate {'opacity': '0'}, 50, ->
       $('.modal-overlay').hide()
 
 
