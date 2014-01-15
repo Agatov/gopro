@@ -55,8 +55,10 @@ $ ->
 
 
   $('.el').bind 'click', ->
+
     $('.modal-overlay').bind 'click', ->
       hide_subscribe_form()
+      $('.modal-overlay').unbind 'click'
 
     show_subscribe_form()
 
@@ -117,7 +119,8 @@ window.hide_thank_you = ->
 
 
 window.show_subscribe_form = ->
-  $('.modal-overlay').show(
+
+  $('.modal-overlay').show()
   $('.modal-overlay').animate({'opacity': '0.8'}, 100, ->
 
     $('.modal-subscribe').css('right', '-500px')
@@ -131,7 +134,7 @@ window.hide_subscribe_form = ->
   $('.modal-subscribe').animate {'top': '-2000px'}, 200, ->
     $('.modal-subscribe').hide()
     $('.modal-overlay').animate {'opacity': '0'}, 50, ->
-      $('.modal-overlay').hide()
+    $('.modal-overlay').hide()
 
 
 window.reachGoal = (goal) ->
