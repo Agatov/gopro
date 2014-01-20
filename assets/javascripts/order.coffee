@@ -14,6 +14,7 @@ $ ->
 
 
   $('.send-order').bind 'click', ->
+
     name = $(@).parent().find('input[name=username]')
     if name.val().length < 2
       name.css 'border', '1px solid red'
@@ -32,12 +33,11 @@ $ ->
 #    reachGoal $(@).attr('goal')
 
 
-    console.log 'asdasdasdasdasd'
-
     if $(@).hasClass 'inline-form'
       show_thank_you_with_overlay()
     else
-      show_thank_you()
+      hide_subscribe_form_without_overlay =>
+        show_thank_you()
 
     false
 
@@ -131,10 +131,19 @@ window.show_subscribe_form = ->
 
 window.hide_subscribe_form = ->
 
-  $('.modal-subscribe').animate {'top': '-2000px'}, 200, ->
+  $('.modal-subscribe').animate {'top': '-2000px'}, 300, ->
     $('.modal-subscribe').hide()
-    $('.modal-overlay').animate {'opacity': '0'}, 50, ->
+    $('.modal-overlay').animate {'opacity': '0'}, 100, ->
     $('.modal-overlay').hide()
+
+window.hide_subscribe_form_without_overlay = (callback = null) ->
+  $('.modal-subscribe').animate {'top': '-2000px'}, 300, ->
+    $('.modal-subscribe').hide()
+
+    if callback
+      callback()
+
+
 
 
 window.reachGoal = (goal) ->
